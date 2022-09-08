@@ -1,0 +1,82 @@
+---
+title: "Lab02 - Visualization"
+author: "Insert your name here"
+date: "Insert date here"
+output: html_document
+---
+
+## Load packages and data
+
+```{r load-packages, message=FALSE}
+library(tidyverse) 
+```
+
+```{r load-data, message=FALSE}
+plastic_waste <- read_csv("data/plastic-waste.csv")
+```
+
+## Exercises
+
+Note: You can and should add the code from the instructions file that's not required for completing the exercises to your RMarkdown file for your own reference later. For example, I will add the code to view the first historgram in a new codeblock here: 
+
+```{r}
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+  geom_histogram(binwidth = 0.2)
+```
+
+You'll notice a warning after running the code (...removed 51 rows). Don't worry about this. This is just telling you that it could not add the observations missing values (NA) for the plastic waste per capita variable. Generally, expect to see warnings like this and understand that this doesn't mean something has gone horribly wrong. Always investigate (e.g., ask if anyone else got the same warning or ask me - in the classroom or on slack), but don't waste too much time on it and feel okay about moving on to the next thing. 
+
+### Exercise 1
+
+Remove this text, and add your answer for Exercise 1 here.
+
+```{r plastic-waste-continent}
+# insert code here
+```
+
+### Exercise 2
+
+```{r plastic-waste-density}
+# insert code here
+```
+
+### Exercise 3
+
+Remove this text, and add your answer for Exercise 3 here.
+
+### Exercise 4
+
+Remove this text, and add your answer for Exercise 4 here.
+
+```{r plastic-waste-violin}
+# insert code here
+```
+
+### Exercise 5
+
+Remove this text, and add your answer for Exercise 5 here.
+
+```{r plastic-waste-mismanaged}
+# insert code here
+```
+
+### Exercise 6
+
+Remove this text, and add your answer for Exercise 6 here.
+
+```{r plastic-waste-mismanaged-continent}
+# insert code here
+```
+
+### Exercise 7
+
+Remove this text, and add your answer for Exercise 7 here.
+
+```{r plastic-waste-population-total}
+# insert code here
+```
+
+```{r plastic-waste-population-coastal}
+# insert code here
+```
+
